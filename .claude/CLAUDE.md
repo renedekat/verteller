@@ -2,6 +2,8 @@
 
 Story-driven test scaffolding for PHPUnit. Sync Gherkin-like `.story` files to test stubs automatically.
 
+IMPORTANT: When applicable, prefer using phpstorm-index MCP tools for code navigation and refactoring.
+
 ## Architecture
 
 This is a standalone PHP library with no external dependencies beyond PHPUnit (dev only).
