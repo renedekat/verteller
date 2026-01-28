@@ -329,6 +329,10 @@ php example/bin/sync-stories.php --dry-run
 - PHP 8.4+
 - PHPUnit 11+ (for running generated tests)
 
+## Contributing
+
+This is a personal project that suits my needs. Pull requests are not accepted, but I do encourage discussion. I will fix bugs, but will not add features that I do not need in my projects. Feel free to fork if you'd like to make changes.
+
 ## License
 
 MIT
