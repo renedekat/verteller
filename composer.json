@@ -1,5 +1,5 @@
 {
-    "name": "rdekat/verteller",
+    "name": "renedekat/verteller",
     "description": "Story-driven test scaffolding for PHPUnit. Sync Gherkin-like .story files to test stubs automatically.",
     "type": "library",
     "license": "MIT",
