@@ -3,6 +3,7 @@
 This diagram shows the complete sync process with file references.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'background': '#ffffff', 'primaryBorderColor': '#cccccc', 'lineColor': '#333333', 'primaryTextColor': '#333333'}}}%%
 flowchart TD
     A[CLI Invoked<br/><code>bin/verteller.php</code>] --> B{Parse Arguments}
 
