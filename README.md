@@ -193,7 +193,7 @@ public static function login_validation_errors_provider(): array
 ## How it works
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'background': '#ffffff', 'primaryBorderColor': '#cccccc', 'lineColor': '#333333', 'primaryTextColor': '#333333'}}}%%
+%%{init: {'theme': 'neutral'}}%%
 flowchart TD
     A[CLI Invoked] --> B{Parse Arguments}
     B -->|help| C[Exit 0]
