@@ -196,36 +196,36 @@ public static function login_validation_errors_provider(): array
 %%{init: {'theme': 'neutral'}}%%
 flowchart TD
     A[CLI Invoked] --> B{Parse Arguments}
-    B -->|help| C[Exit 0]
-    B -->|options| D[Create SyncRunner]
+    B -->| help | C[Exit 0]
+    B -->| options | D[Create SyncRunner]
 
     D --> E[Find Story Files]
     E --> F{Files Found?}
-    F -->|No| G[Exit 0]
-    F -->|Yes| H[Loop: Each File]
+    F -->| No | G[Exit 0]
+    F -->| Yes | H[Loop: Each File]
 
     H --> I[Parse Scenarios]
     I --> J{Test Exists?}
-    J -->|Yes| K[Extract Methods]
-    J -->|No| L[Empty Methods]
+    J -->| Yes | K[Extract Methods]
+    J -->| No | L[Empty Methods]
 
     K --> M{syncHashes?}
     L --> M
 
-    M -->|Yes| N[Update Hashes Only]
+    M -->| Yes | N[Update Hashes Only]
     N --> NEXT
 
-    M -->|No| O[Process Scenarios]
+    M -->| No | O[Process Scenarios]
     O --> P{Changes?}
-    P -->|No| NEXT
-    P -->|Yes| Q{Dry Run?}
-    Q -->|Yes| R[Show Preview]
-    Q -->|No| S[Write Test File]
+    P -->| No | NEXT
+    P -->| Yes | Q{Dry Run?}
+    Q -->| Yes | R[Show Preview]
+    Q -->| No | S[Write Test File]
 
     R --> NEXT
     S --> NEXT
-    NEXT{More?} -->|Yes| H
-    NEXT -->|No| T[Print Summary]
+    NEXT{More?} -->| Yes | H
+    NEXT -->| No | T[Print Summary]
 
     style A fill:#e1f5fe
     style C fill:#c8e6c9
