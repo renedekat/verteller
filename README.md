@@ -190,6 +190,45 @@ public static function login_validation_errors_provider(): array
 - **CI integration** - `--validate` mode fails if tests are out of sync
 - **Traceability** - `#[CoversStory]` attribute links tests to requirements
 
+## How it works
+
+```mermaid
+flowchart TD
+    A[CLI Invoked] --> B{Parse Arguments}
+    B -->|help| C[Exit 0]
+    B -->|options| D[Create SyncRunner]
+
+    D --> E[Find Story Files]
+    E --> F{Files Found?}
+    F -->|No| G[Exit 0]
+    F -->|Yes| H[Loop: Each File]
+
+    H --> I[Parse Scenarios]
+    I --> J{Test Exists?}
+    J -->|Yes| K[Extract Methods]
+    J -->|No| L[Empty Methods]
+
+    K --> M{syncHashes?}
+    L --> M
+
+    M -->|Yes| N[Update Hashes Only]
+    N --> NEXT
+
+    M -->|No| O[Process Scenarios]
+    O --> P{Changes?}
+    P -->|No| NEXT
+    P -->|Yes| Q{Dry Run?}
+    Q -->|Yes| R[Show Preview]
+    Q -->|No| S[Write Test File]
+
+    R --> NEXT
+    S --> NEXT
+    NEXT{More?} -->|Yes| H
+    NEXT -->|No| T[Print Summary]
+```
+
+For the complete diagram with file references, see [flowchart (markdown)](docs/flowchart_sync_process.md) or [flowchart (html)](docs/flowchart_sync_process.html).
+
 ## Default Project Structure
 
 Verteller expects this structure by default:
