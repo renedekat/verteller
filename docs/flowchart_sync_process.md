@@ -93,4 +93,37 @@ flowchart TD
     AR -->|No| AT{Has Errors?}
     AT -->|Yes| AU[Exit 1<br/>Completed with errors]
     AT -->|No| AV[Exit 0<br/>Sync complete]
+
+    style A fill:#e1f5fe
+    style C fill:#c8e6c9
+    style H fill:#c8e6c9
+    style AS fill:#ffcdd2
+    style AU fill:#ffcdd2
+    style AV fill:#c8e6c9
+    style B fill:#fff8e1
+    style G fill:#fff8e1
+    style M fill:#fff8e1
+    style P fill:#fff8e1
+    style S fill:#fff8e1
+    style U fill:#fff8e1
+    style W fill:#fff8e1
+    style AA fill:#fff8e1
+    style AE fill:#fff8e1
+    style AF fill:#fff8e1
+    style AI fill:#fff8e1
+    style AJ fill:#fff8e1
+    style AL fill:#fff8e1
+    style AN fill:#fff8e1
+    style AR fill:#fff8e1
+    style AT fill:#fff8e1
+    style NEXT fill:#fff8e1
+    style N fill:#ffcdd2
+    style AD fill:#fff3e0
+    style V fill:#e8f5e9
+    style AB fill:#e8f5e9
+    style AG fill:#e8f5e9
+    style AO fill:#e8f5e9
+    style AP fill:#e8f5e9
+    style R fill:#e3f2fd
+    style R2 fill:#e3f2fd
 ```
