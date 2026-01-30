@@ -225,6 +225,22 @@ flowchart TD
     S --> NEXT
     NEXT{More?} -->|Yes| H
     NEXT -->|No| T[Print Summary]
+
+    style A fill:#e1f5fe
+    style C fill:#c8e6c9
+    style G fill:#c8e6c9
+    style T fill:#c8e6c9
+    style B fill:#fff8e1
+    style F fill:#fff8e1
+    style J fill:#fff8e1
+    style M fill:#fff8e1
+    style P fill:#fff8e1
+    style Q fill:#fff8e1
+    style NEXT fill:#fff8e1
+    style S fill:#e8f5e9
+    style N fill:#e8f5e9
+    style K fill:#e3f2fd
+    style L fill:#e3f2fd
 ```
 
 For the complete diagram with file references, see [flowchart (markdown)](docs/flowchart_sync_process.md) or [flowchart (html)](docs/flowchart_sync_process.html).
